@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header header header"
+    "contenido contenido sidebar"
+    "widget1 widget2 sidebar"
+    "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+  background: gray;
+  padding: 20px;
+  border-radius: 4px;
+}
+.contenedor .header {
+  background: blue;
+  color: blanchedalmond;
+  grid-area: header;
+}
+.contenedor .contenido {
+  grid-area: contenido;
+}
+
+.contenedor .sidebar {
+  background: gainsboro;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: sidebar;
+}
+.contenedor .widget1,
+.contenedor .widget2 {
+  background: burlywood;
+  color: white;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: ;
+}
+.contenedor .widget1 {
+  grid-area: widget1;
+}
+.contenedor .widget2 {
+  grid-area: widget2;
+}
+.contenedor .footer {
+  background: brown;
+  color: white;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-areas:
+      "header header header"
+      "contenido contenido contenido"
+      "sidebar sidebar sidebar"
+      "widget1 widget1 widget2"
+      "footer footer footer";
+  }
+}
