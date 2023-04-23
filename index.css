@@ -85,7 +85,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .recetas-comidas {
