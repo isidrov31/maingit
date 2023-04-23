@@ -125,3 +125,13 @@ footer {
 footer a {
   text-decoration: none;
 }
+
+.estfi-colombo a {
+  display: flex;
+  align-self: center;
+}
+
+.paulina-cocina a {
+  display: flex;
+  align-self: center;
+}
