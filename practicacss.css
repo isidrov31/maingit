@@ -31,6 +31,7 @@
   background: blue;
   color: blanchedalmond;
   grid-area: header;
+  text-align: center;
 }
 .contenedor .contenido {
   grid-area: contenido;
@@ -75,4 +76,8 @@
       "widget1 widget1 widget2"
       "footer footer footer";
   }
+}
+
+.Caption {
+  display: none;
 }
