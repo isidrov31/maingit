@@ -25,7 +25,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--var-color2);
+  background: var(--var-color5);
 }
 
 /* HEADER */
@@ -85,7 +85,7 @@ header {
   min-width: 600px;
   font-size: 20px;
   display: flex;
-
+  color: var(--var-color2);
   justify-content: center;
 }
 
@@ -101,10 +101,11 @@ header {
   justify-content: space-around;
   gap: 20px;
   min-height: 600px;
-  background-color: var(--var-color3);
+  background-color: var(--var-color6);
   border-radius: 20px;
   padding: 6px 6px;
   color: var(--var-color2);
+  font-size: 15px;
 }
 
 .recommended-bakery {
@@ -113,11 +114,12 @@ header {
   justify-content: space-around;
   min-height: 600px;
   gap: 20px;
-  background-color: var(--var-color3);
+  background-color: var(--var-color6);
   border-radius: 20px;
   border-radius: 20px;
   padding: 6px 6px;
   color: var(--var-color2);
+  font-size: 15px;
 }
 
 .recommended-sweets {
@@ -126,11 +128,12 @@ header {
   justify-content: space-around;
   gap: 20px;
   min-height: 600px;
-  background-color: var(--var-color3);
+  background-color: var(--var-color6);
   border-radius: 20px;
   border-radius: 20px;
   padding: 6px 6px;
   color: var(--var-color2);
+  font-size: 15px;
 }
 
 .favorite {
@@ -162,6 +165,7 @@ header {
   justify-content: center;
   gap: 20px;
   padding: 0px 10px;
+  color: var(--var-color2);
 }
 
 #que-comemos-hoy h2 {
