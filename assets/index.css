@@ -206,3 +206,10 @@ header {
 .button-recipes a {
   color: var(--var-color2);
 }
+
+/* ocultamos menu hamburgesa */
+
+.menu-toggle,
+#menu {
+  display: none;
+}
