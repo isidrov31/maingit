@@ -9,59 +9,207 @@
   --var-color6: #ffffe8;
 }
 
-@media (max-width: 760px) {
-  .navbar {
-    width: 90%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik Mono One";
+  text-decoration: none;
+  list-style: none;
+}
 
-  .navbar-list {
-    position: absolute;
-    top: 65px;
+@media (max-width: 600px) {
+
+  /* HEADER */
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  background-color: var(--var-color1);
+  justify-content: center;
+  align-items: center;
+  /* Fixear el header en el top */
+  position: fixed;
+  top: 0;
+  /* Para que se vea siempre por encima */
+  z-index: 2;
+}
+
+.navbar-list
+{
+  position: absolute;
+  top: 65px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--var-color1);
+  border-top: 0px;
+  border-radius: 0px 0px 15px 15px;
+  padding: 45px 30px;
+  gap: 20px;
+  z-index: 2;
+  display: none;
+
+}
+
+.navbar-list li a {
+  color: var(--var-color2);
+}
+
+.navbar-list li:first-child > a {
+  font-size: 30px;
+}
+
+ /* Mostramos el icono del menu */
+
+.menu-label {
+  display: flex;
+  order: 2;
+  cursor: pointer;
+}
+
+#menu-icon {
+  width: 40px;
+}
+
+#menu-toggle:checked + .navbar-list {
+  display: flex;
+}
+
+#menu-toggle
+{
+  display: none;
+}
+
+  /* MAIN */
+
+  main {
+    display: flex;
     flex-direction: column;
-    width: 85%;
-    background-color: var(--var-color1);
-    border-radius: 0px 0px 4px 4px;
-    gap: 60px;
-    padding: 5px;
-    display: none;
-    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    background: var(--var-color5);
   }
 
-  #recomendaciones {
+/* RECOMENDACIONES */
+
+  #recommendations {
+    display: flex;
+    flex-direction: column;
     width: 90%;
+    gap: 25px;
   }
-  #recomendaciones h1 {
-    font-size: 40px;
+  #recommendations h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    
   }
 
   .recipes {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
   }
 
-  #que-comemos-hoy {
+  .recommended-meal{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: start;
     width: 90%;
+    font-size: 12px;
+    background-color: var(--var-color3);
+    border-radius: 20px;
+    padding: 20px;
   }
 
-  .opciones {
-    width: 80%;
-    gap: 5px;
-  }
-
-  .opcion {
-    width: unset;
-    width: 250px;
-  }
-
-  .opcion img {
-    width: 220px;
-  }
-
-  .menu-toggle {
+  .recommended-bakery{ 
     display: flex;
-    cursor: pointer;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: start;
+    width: 90%;
+    font-size: 12px;
+    background-color: var(--var-color3);
+    border-radius: 20px;
+    padding: 20px;}
+
+  .recommended-sweets{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: start;
+    width: 90%;
+    font-size: 12px;
+    background-color: var(--var-color3);
+    border-radius: 20px;
+    padding: 20px;}
+
+    .vot-si{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  #menu:checked + .navbar-list {
+  .vot-si img {width: 50px;}
+
+  #menu-options {
     display: flex;
+  flex-direction: column;
+    width: 90%;
+    gap: 25px;
+    padding: 50px 0px;
   }
+
+  #menu-options h2 {
+    font-size: 23px;
+  }
+
+  .option{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
+
+  .option img {
+    width: 125px;
+  }
+
+  .option button  {
+    font-size: 10px;
+    width: 125px;
+    background-color: var(--var-color2);
+    border: none;
+    
+ 
+  }
+
+  .option  a {
+    color: var(--var-color1);
+  }
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+  }
+
+}
+
+
