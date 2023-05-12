@@ -18,9 +18,471 @@
   list-style: none;
 }
 
-@media (max-width: 600px) {
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--var-color5);
+}
+
 
   /* HEADER */
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: var(--var-color1);
+  justify-content: center;
+  align-items: center;
+  /* Fixear el header en el top */
+  position: fixed;
+  top: 0;
+  /* Para que se vea siempre por encima */
+  z-index: 2;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  gap: 150px;
+}
+
+.navbar-list {
+  gap: 50px;
+}
+
+.navbar-list li a {
+  color: var(--var-color2);
+}
+
+.navbar-list li:first-child > a {
+  font-size: 30px;
+}
+
+/* container */
+
+#recommendations {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 70px 0px;
+  margin-top: 70px;
+}
+
+.title {
+  max-width: 600px;
+  min-width: 600px;
+  font-size: 20px;
+  display: flex;
+  color: var(--var-color2);
+  justify-content: center;
+}
+
+.recipes {
+  display: flex;
+  gap: 30px;
+  max-width: 90%;
+}
+
+.recommended-meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  min-height: 600px;
+  background-color: var(--var-color6);
+  border-radius: 20px;
+  padding: 6px 6px;
+  color: var(--var-color2);
+  font-size: 15px;
+}
+
+.recommended-bakery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 600px;
+  gap: 20px;
+  background-color: var(--var-color6);
+  border-radius: 20px;
+  border-radius: 20px;
+  padding: 6px 6px;
+  color: var(--var-color2);
+  font-size: 15px;
+}
+
+.recommended-sweets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  min-height: 600px;
+  background-color: var(--var-color6);
+  border-radius: 20px;
+  border-radius: 20px;
+  padding: 6px 6px;
+  color: var(--var-color2);
+  font-size: 15px;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.vot-si {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vot-si img {
+  cursor: pointer;
+  width: 50px;
+}
+
+/* Products */
+
+#menu-options {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 10px;
+  color: var(--var-color2);
+}
+
+#menu-options h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.options {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.option img {
+  border-radius: 20px;
+  height: 250px;
+}
+
+.button-recipes {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--var-color1);
+}
+
+.button-recipes a {
+  color: var(--var-color2);
+}
+
+#menu-toggle,
+.menu-label
+{
+  display: none;
+}
+
+footer{
+  background-color: var(--var-color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+
+}
+
+.social-networks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.paulina-cocina,
+.amasa-madre,
+.el-gordo-cocina,
+.nutricion-argentina,
+.estfi-colombo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--var-color1);
+}
+
+.paulina-cocina img,
+.amasa-madre img,
+.el-gordo-cocina img,
+.nutricion-argentina img,
+.estfi-colombo img {
+  border-radius: 4px;
+}
+
+
+.signature{
+  width: 98%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 10px;
+}
+
+
+
+@media (max-width: 900px)
+{
+header {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  background-color: var(--var-color1);
+  justify-content: center;
+  align-items: center;
+  /* Fixear el header en el top */
+  position: fixed;
+  top: 0;
+  /* Para que se vea siempre por encima */
+  z-index: 2;
+}
+
+.navbar-list
+{
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--var-color1);
+  border-top: 0px;
+  border-radius: 0px 0px 15px 15px;
+  padding: 45px 30px;
+  gap: 20px;
+  z-index: 2;
+  display: none;
+
+}
+
+.navbar-list li a {
+  color: var(--var-color2);
+}
+
+.navbar-list li:first-child > a {
+  font-size: 30px;
+}
+
+ /* Mostramos el icono del menu */
+
+.menu-label {
+  display: flex;
+  order: 2;
+  cursor: pointer;
+}
+
+.menu-label img {
+width: 80px;
+}
+
+#menu-icon {
+  width: 40px;
+}
+
+#menu-toggle:checked + .navbar-list {
+  display: flex;
+}
+
+#menu-toggle
+{
+  display: none;
+}
+
+/* RECOMENDACIONES */
+
+#recommendations {
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: 25px;
+}
+#recommendations h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: unset
+}
+
+.recipes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  max-width:unset;
+}
+
+.recommended-meal,
+.recommended-bakery,
+.recommended-sweets{
+  font-size: 0.75rem;
+}
+
+#menu-options {
+  display: flex;
+flex-direction: column;
+  width: 90%;
+  gap: 25px;
+  padding: 50px 0px;
+}
+
+#menu-options h2 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: unset; 
+  padding: unset;
+}
+
+.option img {
+  width: 200px;
+  height: 190px;
+}
+
+.option button  {
+  font-size: 10px;
+  width: 200px;
+  background-color: var(--var-color2);
+  border: none;
+  
+
+}
+
+.option  a {
+  color: var(--var-color1);
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* * FOOTER */
+
+footer{
+  background-color: var(--var-color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+
+}
+
+.social-networks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+  font-size: 0.50rem;
+}
+
+.paulina-cocina,
+.amasa-madre,
+.el-gordo-cocina,
+.nutricion-argentina,
+.estfi-colombo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--var-color1);
+
+}
+
+.paulina-cocina img,
+.amasa-madre img,
+.el-gordo-cocina img,
+.nutricion-argentina img,
+.estfi-colombo img {
+  border-radius: 4px;
+}
+
+.signature{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 10px;
+  background-color: var(--var-color1);
+}
+
+}
+
+@media (max-width: 600px) 
+{
+
+  /* HEADER */
+
 
 header {
   display: flex;
@@ -39,7 +501,7 @@ header {
 .navbar-list
 {
   position: absolute;
-  top: 65px;
+  top: 100px;
   left: 5%;
   right: 5%;
   width: 90%;
@@ -103,15 +565,20 @@ header {
     flex-direction: column;
     width: 90%;
     gap: 25px;
+    padding: unset;
   }
   #recommendations h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: center;
     
+  }
+
+  .title{
+    min-width: unset;
   }
 
   .recipes {
@@ -133,6 +600,7 @@ header {
     background-color: var(--var-color3);
     border-radius: 20px;
     padding: 20px;
+    min-height:unset;
   }
 
   .recommended-bakery{ 
@@ -144,7 +612,9 @@ header {
     font-size: 12px;
     background-color: var(--var-color3);
     border-radius: 20px;
-    padding: 20px;}
+    padding: 20px;
+    min-height:unset;
+  }
 
   .recommended-sweets{
     display: flex;
@@ -155,7 +625,9 @@ header {
     font-size: 12px;
     background-color: var(--var-color3);
     border-radius: 20px;
-    padding: 20px;}
+    padding: 20px;
+    min-height:unset;
+  }
 
     .vot-si{
     display: flex;
@@ -164,7 +636,11 @@ header {
     justify-content: center;
   }
 
-  .vot-si img {width: 50px;}
+  .vot-si img {
+    width: 50px;
+  }
+
+  /* MENU OPTIONS */
 
   #menu-options {
     display: flex;
@@ -172,20 +648,27 @@ header {
     width: 90%;
     gap: 25px;
     padding: 50px 0px;
+    align-items: unset;
+    justify-content: unset;
   }
 
+
+  
   #menu-options h2 {
-    font-size: 23px;
+    font-size: 2rem;
   }
 
   .option{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: unset; 
+  padding: unset;
 }
 
   .option img {
     width: 125px;
+    height: 100px;
   }
 
   .option button  {
@@ -210,6 +693,60 @@ header {
    
   }
 
+/* FOOTER */
+
+footer{
+  background-color: var(--var-color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+
 }
+
+.social-networks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+  font-size: 0.50rem;
+}
+
+.paulina-cocina,
+.amasa-madre,
+.el-gordo-cocina,
+.nutricion-argentina,
+.estfi-colombo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--var-color1);
+}
+
+.paulina-cocina img,
+.amasa-madre img,
+.el-gordo-cocina img,
+.nutricion-argentina img,
+.estfi-colombo img {
+  border-radius: 4px;
+}
+
+.signature{
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size:0.5rem;
+}
+
+}
+
+
+
 
 

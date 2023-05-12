@@ -69,7 +69,7 @@ header {
 
 /* container */
 
-#recomendaciones {
+#recommendations {
   display: flex;
   max-width: 1200px;
   flex-direction: column;
@@ -156,7 +156,7 @@ header {
 
 /* Products */
 
-#que-comemos-hoy {
+#menu-options {
   width: 1200px;
   max-width: 1200px;
   display: flex;
@@ -168,12 +168,12 @@ header {
   color: var(--var-color2);
 }
 
-#que-comemos-hoy h2 {
+#menu-options h2 {
   font-size: 30px;
   text-align: center;
 }
 
-.opciones {
+.options {
   width: 100%;
   gap: 10px;
   display: flex;
@@ -182,7 +182,7 @@ header {
   justify-content: center;
 }
 
-.opcion {
+.option {
   width: 30%;
   padding: 5px;
   display: flex;
@@ -192,7 +192,7 @@ header {
   gap: 15px;
 }
 
-.opcion img {
+.option img {
   border-radius: 20px;
 }
 
@@ -207,7 +207,56 @@ header {
   color: var(--var-color2);
 }
 
-.menu-toggle,
-#menu {
+#menu-toggle,
+.menu-label
+{
   display: none;
+}
+
+footer{
+  background-color: var(--var-color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+
+}
+
+.social-networks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.paulina-cocina,
+.amasa-madre,
+.el-gordo-cocina,
+.nutricion-argentina,
+.estfi-colombo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--var-color1);
+}
+
+.paulina-cocina img,
+.amasa-madre img,
+.el-gordo-cocina img,
+.nutricion-argentina img,
+.estfi-colombo img {
+  border-radius: 4px;
+}
+
+
+.signature{
+  width: 98%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 10px;
 }
