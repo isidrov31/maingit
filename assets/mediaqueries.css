@@ -147,14 +147,11 @@ flex-direction: column;
   width: 200px;
   height: 190px;
 }
-
-.option button  {
-  font-size: 10px;
-  width: 200px;
-  background-color: var(--var-color2);
+.button-recipes {
   border: none;
-  
-
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--var-color5)
 }
 
 .option  a {
@@ -417,13 +414,11 @@ header {
     height: 100px;
   }
 
-  .option button  {
-    font-size: 10px;
-    width: 125px;
-    background-color: var(--var-color2);
+  .button-recipes {
     border: none;
-    
- 
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--var-color5)
   }
 
   .option  a {
