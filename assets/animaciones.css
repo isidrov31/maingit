@@ -1,0 +1,159 @@
+
+/* Animamos el hover de la navbarlist */
+
+.navbar-list li{
+  transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+.navbar-list li:hover {
+    background-color: var(--var-color5);
+    font-size: 50px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+
+  /* Animamos los botones de las recomendaciones y sus respectivas imagenes */
+
+  .button-recipes{
+    transition: all 0.5s ease-out;
+  }
+
+  .button-recipes:hover{
+    transition: all 0.5s ease-out;
+    transform: scale(1.5);
+    background-color: var(--var-color1);
+  }
+
+  .option img{
+    transition: all 0.5s ease;
+  }
+
+  .option img:hover{
+    transition: all 0.5s ease;
+    width: 320px;
+    height:270px;
+    font-size: 20px;
+  }
+
+/* Animamos las links de los canales recomendades */
+
+  .estfi-colombo,
+  .amasa-madre,
+  .el-gordo-cocina,
+  .nutricion-argentina,
+  .estfi-colombo{
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+  .paulina-cocina:hover{
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  
+  }
+  
+  .amasa-madre:hover{
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+  
+  .el-gordo-cocina:hover{
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+  
+  .nutricion-argentina:hover{
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+  
+  .estfi-colombo:hover{
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  
+  }
+
+  /* Animamos el inicio de la page*/
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slide-up{
+    from {
+      transform: translateY(200%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slide-left{
+    from {
+      transform: translateX(-200%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slide-right{
+    from {
+      transform: translateX(200%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes scale{
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes rabbit-one{
+    from {
+      transform: translateY(200%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+.title h1 {
+  animation: slide-down 1.2s ease-in forwards;
+}
+
+#menu-options h2 {
+  animation: slide-up 1.2s ease-in forwards;
+}
+
+.recommended-meal{
+  animation: slide-left 1.2s ease-in forwards;
+}
+
+.recommended-sweets{
+  animation: slide-right 1.2s ease-in forwards;
+}
+
+.recommended-bakery{
+  animation: scale 1.2s ease-in forwards;
+}
+
+.navbar-list li:nth-child(2),
+.navbar-list li:nth-child(4){
+  animation: rabbit-one 1.2s ease-in forwards;
+}
